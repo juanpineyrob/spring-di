@@ -9,7 +9,7 @@ public class ShippingService {
         double shipment = 0.00;
         if (order.getBasic() < 100.00) {
             shipment = 20.00;
-        } else if (order.getBasic() > 100.00 && order.getBasic() < 200.00) {
+        } else if (order.getBasic() >= 100.00 && order.getBasic() < 200.00) {
             shipment = 12.00;
         }
         return shipment;
